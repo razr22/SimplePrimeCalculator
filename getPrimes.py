@@ -11,8 +11,6 @@ def getPrimes(ceiling):
 	for i in range (2, ceiling + 1):
 		candidate_list.append(i)
 
-#	print ("Search Space ... " + str(candidate_list))
-
 	#parse candidates for primes
 	result = []
 	j = 0
