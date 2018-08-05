@@ -5,13 +5,12 @@
 import os
 
 #function generates list of all primes within given range and returns list
-def getPrimes(ceiling):
+def get_primes(ceiling):
 	#generate list of candidate numbers
 	candidate_list = []
 	for i in range (2, ceiling + 1):
 		candidate_list.append(i)
-
-	#parse candidates for primes
+		#parse candidates for primes
 	result = []
 	j = 0
 	while (j < len(candidate_list)):
@@ -24,7 +23,6 @@ def getPrimes(ceiling):
 			m += 1
 		j += 1
 	return candidate_list
-
 
 if __name__ == '__main__':
 	clear = lambda: os.system('clear')
@@ -41,7 +39,7 @@ if __name__ == '__main__':
 		
 		#check for legal input
 		if int(limit) > 0 and int(limit) < 501:
-			resulting_primes = getPrimes(int(limit))
+			resulting_primes = get_primes(int(limit))
 			print ("Resulting Primes ... \n" + str(resulting_primes))
 		else:
 			print ("Error! Invalid Input...")
@@ -52,7 +50,7 @@ if __name__ == '__main__':
 		
 		#check for legal input
 		if int(check_number) < 1001 and int(check_number) > -1:
-			verdict = getPrimes(int(check_number))
+			verdict = get_primes(int(check_number))
 			if int(check_number) in verdict:
 				print (str(check_number) + " is PRIME")
 			else:
