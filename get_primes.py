@@ -30,7 +30,7 @@ if __name__ == '__main__':
 	print ("--- Selection Menu ---")
 	
 	#user can choose which operation to perform
-	option = input ("1. Compute primes in specified search space\n2. Check if number is prime\nEnter Selection (1 or 2): ")	
+	option = input ("(1) Compute primes in specified search space\n(2) Check if number is prime\nEnter Selection (1 or 2): ")	
 
 	if (int(option) == 1):
 		clear()
