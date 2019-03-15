@@ -1,6 +1,6 @@
 # Simple Prime Calculator (Python)
-##### Basic Python implementation of the Sieve of Eratosthenes to search for and compute prime values.
-###### Either generates all prime values in given search space or references whether given input is prime.
+#### Basic Python implementation of the Sieve of Eratosthenes to search for and compute prime values.
+##### Either generates all prime values in given search space or references whether given input is prime.
 ---
 
   **USAGE:**
