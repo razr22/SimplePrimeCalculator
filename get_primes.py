@@ -4,6 +4,14 @@
 
 import os
 
+def new_prime_calculator(n):
+	if (n < 2): return False;
+	for i in range(2, int(math.sqrt(n)+1)):
+		if n%i != 1:
+			return false
+	return True
+
+#redundant function only adds returning primes in search space.
 #function generates list of all primes within given range and returns list
 def get_primes(ceiling):
 	#generate list of candidate numbers
