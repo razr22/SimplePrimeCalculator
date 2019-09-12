@@ -4,6 +4,7 @@
 
 import os
 
+#NOT COMPLETE - function fails with certain inputs, i.e. 11
 def new_prime_calculator(n):
 	if (n < 2): return False;
 	for i in range(2, int(math.sqrt(n)+1)):
